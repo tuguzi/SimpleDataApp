@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FD0FB392-7ACF-4C48-BDCC-5A3E13C60A34}</ProjectGuid>
+    <ProjectGuid>{B5519646-E081-4D6D-AEB8-D193BDF2B277}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SimpleDataApp</RootNamespace>
-    <AssemblyName>SimpleDataApp</AssemblyName>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,35 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Navigation.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Navigation.Designer.cs">
-      <DependentUpon>Navigation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NewCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewCustomer.Designer.cs">
-      <DependentUpon>NewCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FillOrCancel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FillOrCancel.Designer.cs">
-      <DependentUpon>FillOrCancel.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FillOrCancel.resx">
-      <DependentUpon>FillOrCancel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Navigation.resx">
-      <DependentUpon>Navigation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NewCustomer.resx">
-      <DependentUpon>NewCustomer.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
