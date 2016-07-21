@@ -82,6 +82,7 @@
             this.btnCreateAccount.TabIndex = 4;
             this.btnCreateAccount.Text = "アカウントの作成";
             this.btnCreateAccount.UseVisualStyleBackColor = true;
+            this.btnCreateAccount.Click += new System.EventHandler(this.btnCreateAccount_Click_1);
             // 
             // btnPlaceOrder
             // 
@@ -91,6 +92,7 @@
             this.btnPlaceOrder.TabIndex = 5;
             this.btnPlaceOrder.Text = "注文する";
             this.btnPlaceOrder.UseVisualStyleBackColor = true;
+            this.btnPlaceOrder.Click += new System.EventHandler(this.btnPlaceOrder_Click_1);
             // 
             // btnAddAnotherAccount
             // 
@@ -100,6 +102,7 @@
             this.btnAddAnotherAccount.TabIndex = 6;
             this.btnAddAnotherAccount.Text = "別アカウント追加";
             this.btnAddAnotherAccount.UseVisualStyleBackColor = true;
+            this.btnAddAnotherAccount.Click += new System.EventHandler(this.btnAddAnotherAccount_Click_1);
             // 
             // btnAddFinish
             // 
@@ -109,6 +112,7 @@
             this.btnAddFinish.TabIndex = 7;
             this.btnAddFinish.Text = "完了";
             this.btnAddFinish.UseVisualStyleBackColor = true;
+            this.btnAddFinish.Click += new System.EventHandler(this.btnAddFinish_Click_1);
             // 
             // NewCustomer
             // 
@@ -125,6 +129,7 @@
             this.Controls.Add(this.txtCustomerName);
             this.Name = "NewCustomer";
             this.Text = "新しいアカウントと注文";
+            this.Load += new System.EventHandler(this.NewCustomer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numOrderAmount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

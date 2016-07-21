@@ -44,6 +44,7 @@
             this.txtOrderID.Name = "txtOrderID";
             this.txtOrderID.Size = new System.Drawing.Size(227, 19);
             this.txtOrderID.TabIndex = 0;
+            this.txtOrderID.TextChanged += new System.EventHandler(this.txtOrderID_TextChanged);
             // 
             // btnFindByOrderID
             // 
@@ -53,6 +54,7 @@
             this.btnFindByOrderID.TabIndex = 1;
             this.btnFindByOrderID.Text = "注文の検索";
             this.btnFindByOrderID.UseVisualStyleBackColor = true;
+            this.btnFindByOrderID.Click += new System.EventHandler(this.btnFindByOrderID_Click_1);
             // 
             // dtpFillDate
             // 
@@ -81,6 +83,7 @@
             this.btnCancelOrder.TabIndex = 4;
             this.btnCancelOrder.Text = "キャンセル";
             this.btnCancelOrder.UseVisualStyleBackColor = true;
+            this.btnCancelOrder.Click += new System.EventHandler(this.btnCancelOrder_Click);
             // 
             // btnFillOrder
             // 
@@ -90,6 +93,7 @@
             this.btnFillOrder.TabIndex = 5;
             this.btnFillOrder.Text = "入力";
             this.btnFillOrder.UseVisualStyleBackColor = true;
+            this.btnFillOrder.Click += new System.EventHandler(this.btnFillOrder_Click);
             // 
             // btnFinishUpdates
             // 
@@ -99,6 +103,7 @@
             this.btnFinishUpdates.TabIndex = 6;
             this.btnFinishUpdates.Text = "完了";
             this.btnFinishUpdates.UseVisualStyleBackColor = true;
+            this.btnFinishUpdates.Click += new System.EventHandler(this.btnFinishUpdates_Click_1);
             // 
             // FillOrCancel
             // 
@@ -113,7 +118,8 @@
             this.Controls.Add(this.btnFindByOrderID);
             this.Controls.Add(this.txtOrderID);
             this.Name = "FillOrCancel";
-            this.Text = "注文入力または取消";
+            this.Text = "x";
+            this.Load += new System.EventHandler(this.FillOrCancel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerOrders)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
